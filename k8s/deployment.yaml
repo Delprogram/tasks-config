@@ -16,12 +16,12 @@ spec:
     spec:
       containers:
         - name: tasks-api
-          image: ghcr.io/delprogram/tasks-api:0.1.0
+          image: ghcr.io/delprogram/tasks-api:0.2.0
           ports:
             - containerPort: 8000
           env:
             - name: APP_VERSION
-              value: "0.1.0"
+              value: "0.2.0"
           readinessProbe:
             httpGet:
               path: /health
